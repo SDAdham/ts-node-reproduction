@@ -1,0 +1,28 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "removeComments": true,
+    "outDir": "./out-tsc/server",
+    "target": "es2019",
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "types": [
+      "node",
+      "@types/node"
+    ],
+    "allowJs": true
+  },
+  "files": [
+    "server.ts"
+  ],
+  "angularCompilerOptions": {
+    "entryModule": "./src/app/modules/app-server/app.server.module#AppServerModule",
+    "enableIvy": true
+  }
+}

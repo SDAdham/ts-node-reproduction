@@ -1,0 +1,31 @@
+{
+  "name": "ts-node-reproduction",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Reproduction of `ts-node` is not seeing the extended interfaces",
+  "scripts": {
+    "ng": "ng",
+    "ncc": "ncc",
+    "ts-node": "ts-node",
+    "start:node": "node --inspect --experimental-modules --trace-uncaught --nolazy -r tsconfig-paths/register -r ts-node/register projects/app-one/server.ts",
+    "start:ts-node": "ts-node  --project projects/app-one/tsconfig.debug.json -r tsconfig-paths/register projects/app-one/server.ts"
+  },
+  "dependencies": {
+    "@angular/localize": "^14.0.4",
+    "tslib": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "nodemon": "^2.0.18",
+    "ts-loader": "^9.3.1",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.2",
+    "typescript": "^4.7.4"
+  },
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.22.0",
+    "node": ">= 14.15.3"
+  },
+  "packageManager": "yarn@3.1.1"
+}

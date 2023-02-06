@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.server.json",
+  "compilerOptions": {
+    "target": "es2017",
+    "baseUrl": ".",
+    "rootDirs": [".", "../library-one", "../../node_modules"],
+    "paths": {
+      "*": ["../../node_modules"]
+    }
+  },
+  "include": [
+    "../app-one/**/*.ts",
+    "../library-one/**/*.ts"
+  ]
+}
